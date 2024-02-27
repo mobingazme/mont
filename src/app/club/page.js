@@ -59,7 +59,7 @@ function SignupPage() {
                 <Toaster position="top-center" />
                 <img src='/images/9999.png' />
                 <div className=' w-full h-full rounded-sm  '>
-                    <form className='flex flex-col justify-center items-center' onSubmit={handleSubmit}>
+                    <form className='flex flex-col justify- items-center' onSubmit={handleSubmit}>
                         <div className='px-4 mt-5'>
                             <label className='text-B font-bold text-  '>  نام  </label>
                             <input
@@ -70,8 +70,8 @@ function SignupPage() {
                                 onChange={handleChange}
                                 name='first_name'
                                 className={errors.first_name && touched.first_name
-                                    ? "text-gr border border-B text-center  outline-none h-9 w-[260px] rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
-                                    : "border border-B h-9 w-[260px] text-center rounded-lg text-C bg-none bg-transparent font-bold outline-none  focus:border-B"}
+                                    ? "text-gr border border-B text-center  outline-none h-9 w-full rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
+                                    : "border border-B h-9 w-full text-center rounded-lg text-C bg-none bg-transparent font-bold outline-none  focus:border-B"}
                             />
                             {errors.first_name && touched.first_name && <p className='text-sm text-center text-B mt-1'>{errors.first_name}</p>}
                         </div>
@@ -85,8 +85,8 @@ function SignupPage() {
                                 onChange={handleChange}
                                 name='last_name'
                                 className={errors.last_name && touched.last_name
-                                    ? "text-gr border border-B text-B text-center outline-none h-9 w-[260px] rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
-                                    : "border border-B h-9 w-[260px] text-center text-C rounded-lg  bg-none bg-transparent font-bold outline-none  focus:border-B"}
+                                    ? "text-gr border border-B text-B text-center outline-none h-9 w-full rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
+                                    : "border border-B h-9 w-full text-center text-C rounded-lg  bg-none bg-transparent font-bold outline-none  focus:border-B"}
                             />
                             {errors.last_name && touched.last_name && <p className='text-B text-sm text-center mt-1'>{errors.last_name}</p>}
                         </div>
@@ -102,8 +102,8 @@ function SignupPage() {
                                 onChange={handleChange}
                                 name="phone"
                                 className={errors.phone && touched.phone
-                                    ? "text-gr border border-B text-center text-B outline-none h-9 w-[260px] rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
-                                    : "border border-B h-9 w-[260px] text-C text-center rounded-lg  bg-none bg-transparent font-bold outline-none "}
+                                    ? "text-gr border border-B text-center text-B outline-none h-9 w-full rounded-lg bg-none bg-transparent font-bold  animate__animated animate__bounce"
+                                    : "border border-B h-9 w-full text-C text-center rounded-lg  bg-none bg-transparent font-bold outline-none "}
                             />
                             {errors.phone && touched.phone && <p className='text-B text-sm text-center mt-1'>{errors.phone}</p>}
                         </div>
